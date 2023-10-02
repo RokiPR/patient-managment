@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %} Mastery hospital - Login {% endblock %}
+
+{% block nav-content %}
+    <i class="fas fa-stethoscope"></i>&nbsp;&nbsp; Login
+{% endblock %}
+
+{% block btn-nav %}
+    <a href="{% url 'frontend' %}" class="btn btn-outline-primary btn-sm border-light 
+    fw-bolder text-light" id="btn-nav">
+        Go back
+    </a>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="card p-3 border-dark">
+            <span class="btn btn-outline-dark mt-3">
+                <i class="fas fa-lock"></i>&nbsp;&nbsp; RESTRICTED ACCESS
+            </span>
+            <form method="POST" autocomplete="off" novalidate>
+                {% csrf_token %}
+                <div class="input-group mb-3 mt-5">
+                    <span class="input-group-text">
+                        <i class="fas fa-user-alt icon-width"></i>
+                    </span>
+                    <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="fas fa-lock icon-width"></i>
+                    </span>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <input class="btn btn-primary btn-sm mt-4 mb-3" type="submit" value="Enter" id="btn-enter">
+            </form>
+        </div>
+    </div>
+
+        <!-- MESSAGE FROM BACKEND -->
+        {% if form.errors %}
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script>
+                swal("Denied !", "Enter your data correctly", "error")
+            </script>
+        {% endif %}
+
+
+        <!-- HEART PULSE -->
+        <center id="heart">
+            <i class="text-primary fas fa-heartbeat fa-10x blink_me"></i>
+        </center>
+    </div>
+    <!-- CONTAINER END -->
+
+
+{% endblock %}
+
+{% block footer_style %} 
+    style="color: #0dcaf0;"
+{% endblock %}

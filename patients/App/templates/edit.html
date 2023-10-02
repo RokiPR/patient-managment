@@ -1,0 +1,65 @@
+{% extends "add.html" %}
+
+{% block title %} Mastery hospital - Edit patient {% endblock %}
+
+{% block patients-nav %}
+    <i class="fas fa-user-edit"></i>&nbsp;&nbsp; {{ patient.name }}
+{% endblock %}
+
+{% block card-title %}
+    Registered at: 
+    <span class="text-dark">
+        {{ patient.created_at | date:'m/d/Y (H:i)' }}
+    </span>
+{% endblock %}
+
+{% block btn-add %}
+    <i class="fas fa-hdd"></i>&nbsp; Save
+{% endblock %}
+
+{% block action %}action="/edit_patient"{% endblock %}
+
+{% block value-name %}
+    value="{{ patient.name }}"
+{% endblock %}
+
+{% block value-phone %}
+    value="{{ patient.phone }}"
+{% endblock %}
+
+{% block value-email %}
+    value="{{ patient.email }}"
+{% endblock %}
+
+{% block value-age %}
+    value="{{ patient.age }}"
+{% endblock %}
+
+{% block option %}
+    <option style="background-color: #d3d3d3; color: #007bff;">
+        {{ patient.gender }}
+    </option>
+{% endblock %}
+
+{% if patient.note %}
+    {% block note %}{{ patient.note }}{% endblock note %}
+{% endif %}
+
+{% block id_hidden %}
+    <input type="hidden" value="{{ patient.id }}" name="id">
+{% endblock %}
+
+{% block reset_btn %}
+    <button type="reset" class="btn btn-secondary btn-sm"> <i class="fas fa-sync-alt"></i>&nbsp;Reset</button>
+{% endblock %}
+
+<!-- {% for message in messages %}
+    {% if message.tags == "success" %}
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+        </script>
+        <script>
+            var m = "{{ message }}";
+            swal("Perfect!", m, "success")
+        </script>
+    {% endif %}
+{% endfor %} -->

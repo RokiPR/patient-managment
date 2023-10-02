@@ -1,0 +1,28 @@
+{% extends 'backend.html' %}
+
+{% block show_patients_btn %}
+<a href="{% url 'backend' %}" class="btn btn-outline-primary btn-sm" id="showAllPatients">
+    Limit patients
+</a>
+{% endblock %}
+
+{% block query %}
+
+{% endblock %}
+
+{% block patients_length %} 
+    {{ patients.count }}
+{% endblock %}
+
+{% block footer %}
+    <footer class="bg-dark text-center text-lg-start text-light" id="footer" style="margin-top: 100px;">
+        <div class="text-center p-3" 
+        style="background-color: rgba(0,0,0, 0.2);">
+            Copyright &copy; {% now "Y" %} <span>All rights reserved</span> | Made with
+            <i class="text-danger fas fa-heartbeat blink_me" style="font-size: 15px;"></i> by
+            <a href="#" target="_blank" style="color: #0dcaf0;" 
+            class="text-decoration-none">
+                Raonar</a>
+        </div>
+    </footer>
+{% endblock %}
