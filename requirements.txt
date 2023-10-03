@@ -12,7 +12,7 @@ click==8.1.7
 databases==0.8.0
 distlib==0.3.7
 dj-database-url==2.1.0
-Django==4.0.0
+Django==3.2.19
 django-jazzmin==2.6.0
 fastapi==0.102.0
 fastapi-login==1.9.1
