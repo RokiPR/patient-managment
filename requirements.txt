@@ -17,7 +17,7 @@ django-jazzmin==2.6.0
 fastapi==0.102.0
 fastapi-login==1.8.2
 filelock==3.12.2
-Flask==2.3.3
+Flask==2.2.5
 fsspec==2023.6.0
 gunicorn==21.2.0
 h11==0.14.0
