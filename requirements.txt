@@ -52,7 +52,7 @@ sqlparse==0.4.4
 starlette==0.27.0
 sympy==1.10.1
 tokenizers==0.13.3
-torch==2.0.1
+torch==1.13.1
 tqdm==4.66.1
 transformers==4.32.0
 trio==0.21.0
