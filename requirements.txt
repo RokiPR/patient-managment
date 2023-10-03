@@ -14,10 +14,10 @@ distlib==0.3.7
 dj-database-url==2.1.0
 Django==3.2.19
 django-jazzmin==2.6.0
-fastapi==0.102.0
-fastapi-login==1.8.2
+# fastapi==0.102.0
+# fastapi-login==1.8.2
 filelock==3.12.2
-Flask==2.2.5
+# Flask==2.2.5
 fsspec==2023.1.0
 gunicorn==21.2.0
 h11==0.14.0
@@ -36,8 +36,8 @@ Pillow==10.0.0
 platformdirs==3.10.0
 psycopg2-binary==2.9.7
 py3dns==4.0.0
-pydantic==2.3.0
-pydantic_core==2.6.3
+# pydantic==2.3.0
+# pydantic_core==2.6.3
 PyJWT==2.8.0
 python-dotenv==1.0.0
 python-multipart==0.0.6
@@ -56,11 +56,11 @@ torch==2.0.1
 tqdm==4.66.1
 transformers==4.32.0
 trio==0.21.0
-ttkbootstrap==1.10.1
+# ttkbootstrap==1.10.1
 typing_extensions==4.7.1
 urllib3==2.0.4
-uvicorn==0.23.2
+# uvicorn==0.23.2
 validate-email==1.3
 virtualenv==20.24.5
-websockets==11.0.3
+# websockets==11.0.3
 Werkzeug==2.3.7
