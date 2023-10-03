@@ -19,6 +19,7 @@ fastapi-login==1.9.1
 filelock==3.12.2
 Flask==2.3.3
 fsspec==2023.6.0
+gunicorn==21.2.0
 h11==0.14.0
 huggingface-hub==0.16.4
 idna==3.4
