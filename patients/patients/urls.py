@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from App import views
 
 urlpatterns = [
@@ -30,4 +30,6 @@ urlpatterns = [
 
     # Path to delete a patient
     path("delete-patient/<str:patient_id>", views.delete_patient, name="delete_patient"),
+
+    # re_path(r'^static/(?P<path>.*)$', serve, {})
 ]
