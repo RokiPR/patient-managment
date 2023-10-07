@@ -23,3 +23,16 @@ Adding patient info (first name and last name, phone number, email, age, gender)
 
 If you want to contact me you can always do it through my email:
 **raonar.vokshi@gmail.com**
+## Running the project
+
+To run this project on windows you should write:
+
+```bash
+python manage.py runserver
+```
+
+To run this project on macOS you should write:
+
+```bash
+python3 manage.py runserver
+```
