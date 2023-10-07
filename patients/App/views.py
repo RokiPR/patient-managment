@@ -9,7 +9,7 @@ from django.http import HttpResponseRedirect
 from django.db.models import Q
 from django.core.paginator import Paginator
 from datetime import datetime
-from django.db.models.functions import Lower
+from django.db.models.functions import Lower 
 
 
 # Function to render the frontend page
@@ -25,6 +25,7 @@ def backend(request):
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
     print(current_time)
+
     if 'q' in request.GET:
         q = request.GET['q']
         all_patient_list = Patient.objects.filter(
